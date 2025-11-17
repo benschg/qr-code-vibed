@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import QRCodeGenerator from './components/QRCodeGenerator'
 import './App.css'
 
