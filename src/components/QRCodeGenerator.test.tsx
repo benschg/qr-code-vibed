@@ -6,10 +6,10 @@ import QRCodeGenerator from './QRCodeGenerator'
 // Mock the qrcode library
 vi.mock('qrcode', () => ({
   default: {
-    toCanvas: vi.fn((canvas, text, options) => {
+    toCanvas: vi.fn(() => {
       return Promise.resolve()
     }),
-    toString: vi.fn((text, options) => {
+    toString: vi.fn(() => {
       return Promise.resolve('<svg></svg>')
     }),
   },
